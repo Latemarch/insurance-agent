@@ -7,10 +7,10 @@ export function middleware(request: NextRequest) {
 	// if (!session) {
 	// 	return new Response("Unauthorized", { status: 401 });
 	// }
-	return NextResponse.redirect(new URL("/", request.url));
+	return NextResponse.redirect(new URL("/mocktrading", request.url));
 }
 
 // See "Matching Paths" below to learn more
 export const config = {
-	matcher: "/api/api/api",
+	matcher: "/",
 };

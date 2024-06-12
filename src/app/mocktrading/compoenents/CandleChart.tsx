@@ -10,7 +10,6 @@ type Slice = {
 export default function CandleChart({ data }: { data: any }) {
 	const { yaxis } = useSelector((state: Slice) => state.annotations);
 	const options = chartOptions;
-	console.log(data);
 	return (
 		<div className="bg-DarkChart p-4 px-2 my-2 rounded-xl">
 			<Chart

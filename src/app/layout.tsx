@@ -22,6 +22,7 @@ export default function RootLayout({
 				<div className="inset-0 bg-zinc-900 fixed flex"></div>
 				<div className="text-gray-100 relative max-w-4xl mx-auto ">
 					<AuthContext>
+						<NavBar />
 						<Provider>
 							<main>{children}</main>
 						</Provider>

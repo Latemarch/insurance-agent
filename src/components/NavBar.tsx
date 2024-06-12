@@ -6,13 +6,13 @@ import Link from "next/link";
 export default function NavBar() {
 	const { data: session } = useSession();
 	return (
-		<div className="flex justify-around">
+		<div className="flex mt-2 justify-around">
 			<Link href="/">Home</Link>
 			<Link href="/mocktrading"> MOCK</Link>
 			{session ? (
-				<button onClick={() => signOut()}>Out</button>
+				<button onClick={() => signOut()}>LogOut</button>
 			) : (
-				<button onClick={() => signIn()}>In</button>
+				<button onClick={() => signIn()}>LogIn</button>
 			)}
 		</div>
 	);

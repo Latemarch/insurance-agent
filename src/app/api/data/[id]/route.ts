@@ -3,9 +3,9 @@ import { NextResponse } from "next/server";
 
 export async function GET(
 	req: Request,
-	res: Response,
 	{ params: { id } }: { params: { id: string } }
 ) {
+	console.log(id);
 	const data = await client.btcusd.findUnique({
 		where: {
 			id: Number(id),
